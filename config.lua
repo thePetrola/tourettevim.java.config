@@ -16,40 +16,14 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 --#endregion
 
---#endregion # Keymapping to run terminal
-  lvim.builtin.which_key.mappings["t"] = {
-    name = "+Terminal",
-    f = { "<cmd>ToggleTerm<cr>", "Floating terminal" },
-    v = { "<cmd>2ToggleTerm size=30 direction=vertical<cr>", "Split vertical" },
-    h = { "<cmd>2ToggleTerm size=30 direction=horizontal<cr>", "Split horizontal" },
-  }
---#endregion
-
---#region # Theme configurations
-lvim.colorscheme = "desert"
-
--- Default banner theme
-lvim.builtin.alpha.dashboard.section.header.val = {
-"",
-" .-') _                             _  .-')     ('-.   .-') _    .-') _     ('-.    ",
-"(  OO) )                           ( \( -O )  _(  OO) (  OO) )  (  OO) )  _(  OO)   ",
-"/     '._  .-'),-----.  ,--. ,--.   ,------. (,------./     '._ /     '._(,------.  ",
-"|'--...__)( OO'  .-.  ' |  | |  |   |   /`. ' |  .---'|'--...__)|'--...__)|  .---'  ",
-"'--.  .--'/   |  | |  | |  | | .-') |  /  | | |  |    '--.  .--''--.  .--'|  |      ",
-"   |  |   \_) |  |\|  | |  |_|( OO )|  |_.' |(|  '--.    |  |      |  |  (|  '--.   ",
-"   |  |     \ |  | |  | |  | | `-' /|  .  '.' |  .--'    |  |      |  |   |  .--'   ",
-"   |  |      `'  '-'  '('  '-'(_.-' |  |\  \  |  `---.   |  |      |  |   |  `---.  ",
-"   `--'        `-----'   `-----'    `--' '--' `------'   `--'      `--'   `------'  ",
-"                  (`-.           _   .-')                                           ",
-"                _(OO  )_        ( '.( OO )_                                         ",
-"            ,--(_/   ,. \ ,-.-') ,--.   ,--.)                                       ",
-"            \   \   /(__/ |  |OO)|   `.'   |                                        ",
-"             \   \ /   /  |  |  \|         |                                        ",
-"              \   '   /,  |  |(_/|  |'.'|  |                                        ",
-"               \     /__),|  |_.'|  |   |  |                                        ",
-"                \   /   (_|  |   |  |   |  |                                        ",
-"                 `-'      `--'   `--'   `--'                                        ",
-"",
+--#region
+lvim.plugins = {
+  "nvim-telescope/telescope-project.nvim",
 }
+lvim.builtin.project.active = true
 --#endregion
 
+--#region # Other config imports
+require("./dashboard")
+require("./keymapping")
+--#endregion

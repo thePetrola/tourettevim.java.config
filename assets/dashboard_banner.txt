@@ -9,7 +9,7 @@
              ░ ░     ░        ░        ░  ░                    ░  ░
                                                                    
        ██▒   █▓ ██▓ ███▄ ▄███▓ 
-      ▓██░   █▒▓██▒▓██▒▀█▀ ██▒        A Java IDE based on Lunavim.
+      ▓██░   █▒▓██▒▓██▒▀█▀ ██▒        A Java IDE based on LunarVim.
        ▓██  █▒░▒██▒▓██    ▓██░        @ Powered by oTourette.
         ▒██ █░░░██░▒██    ▒██ 
          ▒▀█░  ░██░▒██▒   ░██▒        v: 0.1.0 (Beta).

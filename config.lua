@@ -139,7 +139,7 @@ end
 
 -- see if the dashboard image file exists
 function file_exists()
-  local f = io.open(imgdir .. "/dashboard_banner.txt", "rb")
+  local f = io.open(imgdir .. "/assets/dashboard_banner.txt", "rb")
   if f then f:close() end
   return f ~= nil
 end
@@ -157,7 +157,7 @@ end
 
 local header = {
   type = "text",
-  val = lines_from(imgdir .. "/dashboard_banner.txt"),
+  val = lines_from(imgdir .. "/assets/dashboard_banner.txt"),
   opts = {
     position = "center",
     hl = "Type",
@@ -206,7 +206,7 @@ local buttons = {
 
 local folow_me = {
   type = "text",
-  val = lines_from(imgdir .. "/dashboard_follow_me.txt"),
+  val = lines_from(imgdir .. "/assets/dashboard_follow_me.txt"),
   opts = {
     position = "center",
     hl = "type",

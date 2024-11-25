@@ -6,7 +6,7 @@ end
 
 -- Set workspace
 local home = os.getenv "HOME"
-local workspace_path = home .. "/.local/share/lunarvim/jdtls-workspace/"
+local workspace_path = home .. "~/jdtls-workspace/"
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = workspace_path .. project_name
 
